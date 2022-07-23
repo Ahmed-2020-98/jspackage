@@ -49,6 +49,7 @@ module.exports = {
                       ["gifsicle", { interlaced: true }],
                       [ "mozjpeg",{ quality: 60}],
                       ["optipng", { optimizationLevel: 5 }],
+                      [ new HtmlWebpackPlugin ({template:"./src/index.html"})]
                       // Svgo configuration here https://github.com/svg/svgo#configuration
                       [
                         "svgo",
